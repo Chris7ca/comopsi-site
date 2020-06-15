@@ -1,0 +1,366 @@
+@import "~uikit/src/less/uikit.theme.less";
+
+@global-font-family:                "Poppins", sans-serif;
+@base-heading-font-family:          "Work Sans", sans-serif;
+
+@global-font-size:                  14px;
+
+//@global-xxlarge-font-size:          2.571rem;
+//@global-xlarge-font-size:           1.857rem;
+//@global-large-font-size:            1.429rem;
+//@global-medium-font-size:           1.143rem;
+//@global-small-font-size:            0.8571rem;
+
+/**
+ *
+ * Colors
+ *
+ */
+
+@global-color:                      #666;
+@global-emphasis-color:             #7e3688;
+@global-muted-color:                #999;
+
+@global-heanding-color:             #333;
+ 
+@text-meta-color:                   #999;
+ 
+@global-link-color:                 #7e3688;
+@global-link-hover-color:           lighten(#7e3688, 10%);
+ 
+@global-inverse-color:              #FAFAFA;
+ 
+@global-background:                 #f9f9fb;
+ 
+@global-muted-background:           #f8f8f8;
+@global-primary-background:         #7e3688;
+@global-secondary-background:       #279883;
+ 
+@global-success-background:         #32d296;
+@global-warning-background:         #faa05a;
+@global-danger-background:          #f0506e;
+
+@base-heading-color:				#333;
+
+/**
+ *
+ * Buttons
+ *
+ */
+ 
+@button-line-height:                35px;
+ 
+//@button-font-size:                  16px;
+ 
+@button-default-hover-background:   lighten(@button-default-background, 5%);
+@button-default-active-background:  lighten(@button-default-background, 10%);
+@button-primary-hover-background:   lighten(@button-primary-background, 5%);
+@button-primary-active-background:  lighten(@button-primary-background, 10%);
+@button-secondary-hover-background: lighten(@button-secondary-background, 5%);
+@button-secondary-active-background:lighten(@button-secondary-background, 10%);
+ 
+.hook-button() {
+	letter-spacing: 2px;
+	border-radius: 50px;
+}
+
+/**
+ *
+ * Shadows
+ *
+ */
+
+.hook-divider-small() {
+	border-top: 2px solid #7e3688;
+}
+
+ /**
+ *
+ * Shadows
+ *
+ */
+
+@global-small-box-shadow:           0 -1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.2);
+@global-medium-box-shadow:          0 4px 10px 0 rgba(0,0,0,0.02), 0 4px 10px 0 rgba(0,0,0,0.02);
+@global-large-box-shadow:           0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08);
+@global-xlarge-box-shadow:          0 28px 50px rgba(0,0,0,0.16);
+ 
+ 
+
+/**
+ *
+ * Modals
+ *
+ */
+
+.hook-modal-dialog() {
+	border-radius: .25rem !important;
+}
+ 
+/**
+ *
+ * Padding
+ *
+ */
+ 
+@padding-padding:			        20px;
+ 
+
+/**
+ *
+ * Cards
+ *
+ */
+
+@card-default-background:           #FFF;
+ 
+.hook-card() {
+	border-radius: .25rem !important;
+}
+ 
+ 
+/**
+ *
+ * Form
+ *
+ */
+ 
+.hook-form() {
+	padding: 0px 20px;
+	color: #999;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border-radius: 4px;
+	background-color: #F5F5F5;
+}
+ 
+.hook-form-focus() {
+	border-color: #c9c9c9;
+	background-color: #eee;
+	color: #999;
+}
+ 
+ 
+/**
+ *
+ * Iconnav
+ *
+ */
+
+@iconnav-item-hover-color:          #279883;
+@iconnav-item-active-color:         #279883;
+
+.hook-iconnav-item() {
+letter-spacing: 1.5px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+/**
+ *
+ * Navbar
+ *
+ */
+
+@navbar-background:								transparent;
+@navbar-nav-item-font-family:                   @base-heading-font-family;
+@navbar-nav-item-font-size:                     @global-font-size;
+
+@navbar-nav-item-color:                         #999;
+@navbar-nav-item-font-size:                     @global-font-size;
+@navbar-nav-item-font-family:                   @global-font-family;
+@navbar-nav-item-hover-color:                   @global-color;
+@navbar-nav-item-onclick-color:                 @global-emphasis-color;
+@navbar-nav-item-active-color:                  @global-emphasis-color;
+
+@inverse-navbar-nav-item-color:                	#FFF;
+@inverse-navbar-nav-item-hover-color:          	@inverse-global-color;
+@inverse-navbar-nav-item-onclick-color:        	@inverse-global-emphasis-color;
+@inverse-navbar-nav-item-active-color:         	@inverse-global-emphasis-color;
+@inverse-navbar-item-color:                    	@inverse-global-color;
+@inverse-navbar-toggle-color:                  	@inverse-global-muted-color;
+@inverse-navbar-toggle-hover-color:            	@inverse-global-color;
+
+.hook-navbar-nav-item() {
+	letter-spacing: 2px;
+}
+
+.hook-navbar-nav-item-active() {
+	font-weight: bold;
+}
+ 
+/**
+ *
+ * Notifications
+ *
+ */
+ 
+@notification-message-font-size: 				@global-small-font-size;
+ 
+@notification-message-primary-color:            #eee;
+@notification-message-success-color:            #777;
+@notification-message-warning-color:            #777;
+@notification-message-danger-color:  			#777;
+ 
+ .hook-notification-message(){
+	border-radius: .25rem;
+}
+
+.hook-notification-message-primary(){
+	background: #09212c !important;
+}
+
+.hook-notification-message-warning() {
+	background: rgba(255,207,165,.9) !important;
+	border-color: rgba(255,207,165,.9) !important;
+}
+
+.hook-notification-message-danger() {
+	background: rgba(255,175,180,.9) !important;
+	border-color: rgba(255,175,180,.9) !important;
+}
+
+.hook-notification-message-success() {
+	background: rgba(148, 235, 169, 0.9) !important;
+	border-color: rgba(166,239,184,.9) !important;
+}
+ 
+ 
+ /**
+  *
+  * Shadhows
+  *
+  */
+ 
+@global-small-box-shadow:                       0 -1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.2);
+@global-medium-box-shadow:                      0 4px 10px 0 rgba(0,0,0,0.02), 0 4px 10px 0 rgba(0,0,0,0.02);
+@global-large-box-shadow:                       0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08);
+@global-xlarge-box-shadow:                      0 28px 50px rgba(0, 0, 0, 0.5);
+ 
+ 
+ /**
+  *
+  * Overlay
+  *
+  */
+ 
+@overlay-primary-background:                   rgba(34,34,34,0.8);
+ 
+ 
+ /**
+  *
+  * Progresbar
+  *
+  */
+ 
+@progress-height:                               5px;
+@progress-bar-background:                       #279883;
+@progress-background:                           #eee;
+
+
+/**
+ *
+ * Custom styles
+ *
+ */
+
+.gradient-background-top {
+    background: rgba(126, 54, 136, 0.5);
+    background: linear-gradient(
+        to top,
+        rgba(39, 152, 131, 0.7),
+        rgba(126, 54, 136, 0.6)
+    );
+}
+
+.filter-secondary {
+    background: rgba(39, 152, 131, 0.6);
+}
+
+.drop-shadow-logo {
+	filter: drop-shadow(0px 0px 8px #2A2A2A);
+}
+
+.background-white {
+	background-color: #fafafa;
+}
+
+.uk-navbar-right .uk-navbar-nav > li {
+    position: relative;
+}
+
+.uk-navbar-right .uk-navbar-nav > li > a:after {
+    content: '';
+    margin-top: -15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    background-color: #279883;
+    transition: transform 0.3s;
+}
+
+.uk-navbar-right .uk-navbar-nav > li > a:hover:after {
+    transform: scaleX(1);
+}
+
+.home-hero {
+	width: 145%!important;
+}
+
+.avatar-small {
+	width: 150px!important;
+	height: 150px!important;
+	object-fit: cover;
+	border-radius: 50%!important;
+}
+
+.btn-info-member-team {
+	opacity: 0;
+	transform: scale(0);
+	transition: all 300ms ease-out;
+}
+
+.card-member-team:hover .btn-info-member-team {
+	opacity: 1;
+	transform: scale(1);
+	transition: all 300ms ease-in;
+}
+
+.filter-benefits {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(0, 153, 130, 0.9), rgba(145, 51, 138, 0.9));
+}
+
+.filter-benefits > * {
+    text-align: center;
+    color: #FAFAFA !important;
+    transform: scale(0.9);
+}
+
+.filter-primary-to-right {
+    background: linear-gradient(to right, rgba(145, 51, 138, 0.7), rgba(0, 153, 130, 0.7));
+}
+
+.card-event img {
+	transition: transform 300ms ease-out;
+	transform: scale(1.05);
+	border-radius: 5px;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.02), 0 4px 10px 0 rgba(0,0,0,0.1);
+}
+
+.card-event img:hover {
+	transition: transform 300ms ease-in;
+	transform: translateY(-30px);
+}
+
+@media screen and (max-width: 959px) {
+	.home-hero {
+		width: 100%!important;
+	}
+}
